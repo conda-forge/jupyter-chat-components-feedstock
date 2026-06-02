@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.5.0"
+  version: "0.6.0"
 
 package:
   name: jupyter-chat-components
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyter-chat-components/jupyter_chat_components-${{ version }}.tar.gz
-  sha256: 9538b0cfe6fec33a42a6733ae58ff1d236fb3fe1fca810fde4f608090866aa02
+  sha256: 894821160bb28ca60e6eddbbaa7427f14ed9b22cb1c9ab9e2de239f99db98727
 
 build:
   number: 0
