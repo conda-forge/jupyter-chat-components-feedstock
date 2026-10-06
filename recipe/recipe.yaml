@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.6.0"
+  version: "0.7.0"
 
 package:
   name: jupyter-chat-components
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyter-chat-components/jupyter_chat_components-${{ version }}.tar.gz
-  sha256: 894821160bb28ca60e6eddbbaa7427f14ed9b22cb1c9ab9e2de239f99db98727
+  sha256: b7f64b34d45408eb63eb72f5bf1646e329c6d837f547eab4f18b9a54df7a89b6
 
 build:
   number: 0
@@ -29,7 +29,9 @@ requirements:
 
 tests:
   - python:
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       pip_check: true
       imports: jupyter_chat_components
   - script:
